@@ -72,7 +72,7 @@ public class RedisAnnotationLockAspect {
 		}
 		if (!isLocked) {
 			if (redisAnnotationLock.throwException()) {
-				log.error("获取：{} 锁失败，抛异常", key);
+				logDetail("获取：{} 锁失败，抛异常", key);
 				if (StringUtil.isNotBlank(errorMsgExpression)) {
 					String errMsg = parser.parseExpression(errorMsgExpression).getValue(context, String.class);
 					if (StringUtil.isNotBlank(errMsg)) {
@@ -82,7 +82,7 @@ public class RedisAnnotationLockAspect {
 					throw new IllegalStateException("获取锁失败! key: " + key);
 				}
 			} else {
-				log.error("获取：{} 锁失败，忽略执行", key);
+				logDetail("获取：{} 锁失败，忽略执行", key);
 			}
 			logDetail("获取锁失败，不抛出异常，不执行后续操作");
 			return null;
@@ -92,7 +92,7 @@ public class RedisAnnotationLockAspect {
 			// 执行业务逻辑
 			return joinPoint.proceed();
 		} catch (Exception e) {
-			log.error("执行过程触发异常，等待锁自动释放：{}", e.getMessage());
+			logDetail("执行过程触发异常，等待锁自动释放：{}", e.getMessage());
 			throw e;
 		} finally {
 			try {

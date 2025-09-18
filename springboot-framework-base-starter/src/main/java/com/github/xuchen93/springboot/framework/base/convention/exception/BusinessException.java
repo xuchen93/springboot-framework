@@ -1,5 +1,6 @@
 package com.github.xuchen93.springboot.framework.base.convention.exception;
 
+import cn.hutool.core.util.StrUtil;
 import com.github.xuchen93.springboot.framework.base.convention.error.BaseErrorCode;
 import com.github.xuchen93.springboot.framework.base.convention.error.IErrorCode;
 import lombok.Getter;
@@ -8,7 +9,7 @@ import lombok.Getter;
 public class BusinessException extends AbstractException {
 
 	public BusinessException(String message, Object... params) {
-		this(String.format(message, params));
+		this(StrUtil.format(message, params));
 	}
 
 	public BusinessException(String message) {

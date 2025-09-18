@@ -23,6 +23,14 @@ spring:
 
 xuchen93:
   framework:
+    base:
+      log-aspect:
+        enable-log: true
+        enable-stats: true
+      method-stats:
+        enable-consume: true
+        consume-seconds: 300
+
     cache:
       caffeine:
         enable-cache-manager: true
@@ -38,7 +46,12 @@ xuchen93:
           key-prefix: "example:cache:"
           primary: false
           expire-seconds: 300
-
+    web:
+      request-aspect:
+        enable-log: true
+        enable-stats: true
+      enable-exception-advice: true
+      enable-app-start-log: true
 logging:
   pattern:
     console: "%boldMagenta(%d{yyyy-MM-dd HH:mm:ss.SSS}) | %highlight(%-5level) | %boldYellow(%-18t) | %boldGreen(%50.50logger{49}):%boldGreen(%-4.4line) | %msg%n"

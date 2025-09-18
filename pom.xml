@@ -11,6 +11,7 @@
     <modules>
         <module>springboot-framework-base-starter</module>
         <module>springboot-framework-cache-starter</module>
+        <module>springboot-framework-web-starter</module>
         <module>springboot-framework-example</module>
         <!--        <module>base-framework-mq-starter</module>-->
         <!--        <module>base-framework-nacos-starter</module>-->
@@ -28,6 +29,7 @@
         <spring-boot.version>3.2.4</spring-boot.version>
         <caffeine.version>3.1.8</caffeine.version>
         <hutool.version>5.8.34</hutool.version>
+        <redisson.version>3.13.5</redisson.version>
     </properties>
 
     <dependencies>
@@ -78,7 +80,7 @@
             <dependency>
                 <groupId>org.redisson</groupId>
                 <artifactId>redisson-spring-boot-starter</artifactId>
-                <version>3.13.5</version>
+                <version>${redisson.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

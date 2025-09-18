@@ -2,6 +2,7 @@ package com.github.xuchen93.springboot.framework.cache.configuration;
 
 import com.github.benmanes.caffeine.cache.Caffeine;
 import com.github.xuchen93.springboot.framework.base.common.CommonUtil;
+import com.github.xuchen93.springboot.framework.cache.constants.CacheConstants;
 import com.github.xuchen93.springboot.framework.cache.properties.CacheProperty;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeansException;
@@ -32,7 +33,6 @@ import java.time.Duration;
 @Component
 public class CacheManagerRegister implements ImportBeanDefinitionRegistrar, BeanFactoryAware {
 
-	private static final String BEAN_NAME_PREFIX = "cacheManager";
 
 	private ConfigurableEnvironment environment;
 	private BeanFactory beanFactory;
@@ -57,7 +57,7 @@ public class CacheManagerRegister implements ImportBeanDefinitionRegistrar, Bean
 	}
 
 	private void registerCaffeineCacheManager(BeanDefinitionRegistry registry, CacheProperty.CaffeineCacheManagerProperties caffeineConfig) {
-		String beanName = BEAN_NAME_PREFIX + "Caffeine";
+		String beanName = CacheConstants.CACHE_MANAGER_CAFFEINE;
 		BeanDefinitionBuilder builder = BeanDefinitionBuilder.genericBeanDefinition(CacheManager.class, () -> {
 			// 1. 构建CaffeineCacheManager
 			CaffeineCacheManager cacheManager = new CaffeineCacheManager();
@@ -87,7 +87,7 @@ public class CacheManagerRegister implements ImportBeanDefinitionRegistrar, Bean
 	}
 
 	private void registerRedisCacheManager(BeanDefinitionRegistry registry, CacheProperty.RedisProperties redis) {
-		String beanName = BEAN_NAME_PREFIX + "Redis";
+		String beanName = CacheConstants.CACHE_MANAGER_REDIS;
 		BeanDefinitionBuilder builder = BeanDefinitionBuilder.genericBeanDefinition(CacheManager.class, () -> {
 			// 获取已存在的RedisTemplate Bean
 			RedisTemplate<String, Object> redisTemplate = beanFactory.getBean(RedisTemplate.class);

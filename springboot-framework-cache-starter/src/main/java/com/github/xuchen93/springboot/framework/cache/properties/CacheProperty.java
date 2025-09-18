@@ -10,7 +10,10 @@ import org.springframework.context.annotation.Configuration;
 public class CacheProperty {
 	public static final String PROPERTY_PREFIX = "xuchen93.framework.cache";
 
+	private boolean beanCreateAware = true;
+
 	private CaffeineCacheManagerProperties caffeine = new CaffeineCacheManagerProperties();
+
 	private RedisProperties redis = new RedisProperties();
 
 	/**
