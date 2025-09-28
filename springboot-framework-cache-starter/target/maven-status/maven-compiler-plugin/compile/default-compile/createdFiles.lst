@@ -1,0 +1,8 @@
+com\github\xuchen93\springboot\framework\cache\configuration\CacheFreameworkBeanCreateAware.class
+com\github\xuchen93\springboot\framework\cache\aop\RedisAnnotationLockAspect.class
+com\github\xuchen93\springboot\framework\cache\properties\CacheProperty.class
+com\github\xuchen93\springboot\framework\cache\configuration\CacheManagerRegister.class
+com\github\xuchen93\springboot\framework\cache\RedisCache.class
+com\github\xuchen93\springboot\framework\cache\properties\CacheProperty$RedisCacheProperties.class
+com\github\xuchen93\springboot\framework\cache\properties\CacheProperty$CaffeineCacheManagerProperties.class
+com\github\xuchen93\springboot\framework\cache\properties\CacheProperty$RedisProperties.class

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springboot-framework-web-starter" />
+        <module name="springboot-framework-example" />
+        <module name="springboot-framework-database-starter" />
+        <module name="base-framework-base-starter" />
+        <module name="base-framework-cache-starter" />
+        <module name="springboot-framework-cache-starter" />
+        <module name="springboot-framework-base-starter" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="PREFER_TARGET_JDK_COMPILER" value="false" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="base-framework" options="-parameters" />
+      <module name="base-framework-base-starter" options="-parameters" />
+      <module name="base-framework-cache-starter" options="-parameters" />
+      <module name="springboot-framework" options="-parameters" />
+      <module name="springboot-framework-base-starter" options="-parameters" />
+      <module name="springboot-framework-cache-starter" options="-parameters" />
+      <module name="springboot-framework-database-starter" options="-parameters" />
+      <module name="springboot-framework-example" options="-parameters" />
+      <module name="springboot-framework-web-starter" options="-parameters" />
+    </option>
+  </component>
+</project>

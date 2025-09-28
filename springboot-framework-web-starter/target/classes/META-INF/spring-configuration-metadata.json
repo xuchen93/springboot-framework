@@ -1,0 +1,37 @@
+{
+  "groups": [
+    {
+      "name": "xuchen93.framework.web",
+      "type": "com.github.xuchen93.springboot.framework.web.properties.WebProperty",
+      "sourceType": "com.github.xuchen93.springboot.framework.web.properties.WebProperty"
+    },
+    {
+      "name": "xuchen93.framework.web.request-aspect",
+      "type": "com.github.xuchen93.springboot.framework.web.properties.WebProperty$RequestAspect",
+      "sourceType": "com.github.xuchen93.springboot.framework.web.properties.WebProperty"
+    }
+  ],
+  "properties": [
+    {
+      "name": "xuchen93.framework.web.enable-app-start-log",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.github.xuchen93.springboot.framework.web.properties.WebProperty"
+    },
+    {
+      "name": "xuchen93.framework.web.enable-exception-advice",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.github.xuchen93.springboot.framework.web.properties.WebProperty"
+    },
+    {
+      "name": "xuchen93.framework.web.request-aspect.enable-log",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.github.xuchen93.springboot.framework.web.properties.WebProperty$RequestAspect"
+    },
+    {
+      "name": "xuchen93.framework.web.request-aspect.enable-stats",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.github.xuchen93.springboot.framework.web.properties.WebProperty$RequestAspect"
+    }
+  ],
+  "hints": []
+}

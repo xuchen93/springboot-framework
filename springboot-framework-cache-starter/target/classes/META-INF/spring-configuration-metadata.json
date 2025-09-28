@@ -1,0 +1,126 @@
+{
+  "groups": [
+    {
+      "name": "xuchen93.framework.cache",
+      "type": "com.github.xuchen93.springboot.framework.cache.properties.CacheProperty",
+      "sourceType": "com.github.xuchen93.springboot.framework.cache.properties.CacheProperty"
+    },
+    {
+      "name": "xuchen93.framework.cache.caffeine",
+      "type": "com.github.xuchen93.springboot.framework.cache.properties.CacheProperty$CaffeineCacheManagerProperties",
+      "sourceType": "com.github.xuchen93.springboot.framework.cache.properties.CacheProperty"
+    },
+    {
+      "name": "xuchen93.framework.cache.redis",
+      "type": "com.github.xuchen93.springboot.framework.cache.properties.CacheProperty$RedisProperties",
+      "sourceType": "com.github.xuchen93.springboot.framework.cache.properties.CacheProperty"
+    },
+    {
+      "name": "xuchen93.framework.cache.redis.cache-manager",
+      "type": "com.github.xuchen93.springboot.framework.cache.properties.CacheProperty$RedisCacheProperties",
+      "sourceType": "com.github.xuchen93.springboot.framework.cache.properties.CacheProperty$RedisProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "xuchen93.framework.cache.bean-create-aware",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.github.xuchen93.springboot.framework.cache.properties.CacheProperty",
+      "defaultValue": true
+    },
+    {
+      "name": "xuchen93.framework.cache.caffeine.enable-cache-manager",
+      "type": "java.lang.Boolean",
+      "description": "是否启用Caffeine缓存",
+      "sourceType": "com.github.xuchen93.springboot.framework.cache.properties.CacheProperty$CaffeineCacheManagerProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "xuchen93.framework.cache.caffeine.expire-after-access-seconds",
+      "type": "java.lang.Long",
+      "sourceType": "com.github.xuchen93.springboot.framework.cache.properties.CacheProperty$CaffeineCacheManagerProperties",
+      "defaultValue": -1
+    },
+    {
+      "name": "xuchen93.framework.cache.caffeine.expire-after-write-seconds",
+      "type": "java.lang.Long",
+      "sourceType": "com.github.xuchen93.springboot.framework.cache.properties.CacheProperty$CaffeineCacheManagerProperties",
+      "defaultValue": -1
+    },
+    {
+      "name": "xuchen93.framework.cache.caffeine.initial-capacity",
+      "type": "java.lang.Integer",
+      "sourceType": "com.github.xuchen93.springboot.framework.cache.properties.CacheProperty$CaffeineCacheManagerProperties",
+      "defaultValue": -1
+    },
+    {
+      "name": "xuchen93.framework.cache.caffeine.maximum-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.github.xuchen93.springboot.framework.cache.properties.CacheProperty$CaffeineCacheManagerProperties",
+      "defaultValue": -1
+    },
+    {
+      "name": "xuchen93.framework.cache.caffeine.primary",
+      "type": "java.lang.Boolean",
+      "description": "Caffeine的CacheManager是否是primary",
+      "sourceType": "com.github.xuchen93.springboot.framework.cache.properties.CacheProperty$CaffeineCacheManagerProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "xuchen93.framework.cache.caffeine.refresh-after-write-seconds",
+      "type": "java.lang.Long",
+      "sourceType": "com.github.xuchen93.springboot.framework.cache.properties.CacheProperty$CaffeineCacheManagerProperties",
+      "defaultValue": -1
+    },
+    {
+      "name": "xuchen93.framework.cache.redis.cache-manager.enable",
+      "type": "java.lang.Boolean",
+      "description": "是否启用redis缓存",
+      "sourceType": "com.github.xuchen93.springboot.framework.cache.properties.CacheProperty$RedisCacheProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "xuchen93.framework.cache.redis.cache-manager.expire-seconds",
+      "type": "java.lang.Long",
+      "description": "过期时间，单位秒。默认1小时",
+      "sourceType": "com.github.xuchen93.springboot.framework.cache.properties.CacheProperty$RedisCacheProperties",
+      "defaultValue": 3600
+    },
+    {
+      "name": "xuchen93.framework.cache.redis.cache-manager.key-prefix",
+      "type": "java.lang.String",
+      "description": "redis缓存的key前缀",
+      "sourceType": "com.github.xuchen93.springboot.framework.cache.properties.CacheProperty$RedisCacheProperties",
+      "defaultValue": "cache:"
+    },
+    {
+      "name": "xuchen93.framework.cache.redis.cache-manager.primary",
+      "type": "java.lang.Boolean",
+      "description": "Redis的CacheManager是否是primary",
+      "sourceType": "com.github.xuchen93.springboot.framework.cache.properties.CacheProperty$RedisCacheProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "xuchen93.framework.cache.redis.enable",
+      "type": "java.lang.Boolean",
+      "description": "是否启用Redis缓存",
+      "sourceType": "com.github.xuchen93.springboot.framework.cache.properties.CacheProperty$RedisProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "xuchen93.framework.cache.redis.enable-annotation-lock",
+      "type": "java.lang.Boolean",
+      "description": "是否启用redis注解锁",
+      "sourceType": "com.github.xuchen93.springboot.framework.cache.properties.CacheProperty$RedisProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "xuchen93.framework.cache.redis.enable-lock-detail",
+      "type": "java.lang.Boolean",
+      "description": "打印注解锁的详细日志",
+      "sourceType": "com.github.xuchen93.springboot.framework.cache.properties.CacheProperty$RedisProperties",
+      "defaultValue": false
+    }
+  ],
+  "hints": []
+}

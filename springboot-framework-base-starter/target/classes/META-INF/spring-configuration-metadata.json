@@ -1,0 +1,52 @@
+{
+  "groups": [
+    {
+      "name": "xuchen93.framework.base",
+      "type": "com.github.xuchen93.springboot.framework.base.properties.BaseProperty",
+      "sourceType": "com.github.xuchen93.springboot.framework.base.properties.BaseProperty"
+    },
+    {
+      "name": "xuchen93.framework.base.log-aspect",
+      "type": "com.github.xuchen93.springboot.framework.base.properties.BaseProperty$LogAspect",
+      "sourceType": "com.github.xuchen93.springboot.framework.base.properties.BaseProperty"
+    },
+    {
+      "name": "xuchen93.framework.base.method-stats-config",
+      "type": "com.github.xuchen93.springboot.framework.base.properties.BaseProperty$MethodStatsConfig",
+      "sourceType": "com.github.xuchen93.springboot.framework.base.properties.BaseProperty"
+    }
+  ],
+  "properties": [
+    {
+      "name": "xuchen93.framework.base.bean-create-aware",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.github.xuchen93.springboot.framework.base.properties.BaseProperty",
+      "defaultValue": true
+    },
+    {
+      "name": "xuchen93.framework.base.log-aspect.enable-log",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.github.xuchen93.springboot.framework.base.properties.BaseProperty$LogAspect",
+      "defaultValue": true
+    },
+    {
+      "name": "xuchen93.framework.base.log-aspect.enable-stats",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.github.xuchen93.springboot.framework.base.properties.BaseProperty$LogAspect",
+      "defaultValue": true
+    },
+    {
+      "name": "xuchen93.framework.base.method-stats-config.consume-seconds",
+      "type": "java.lang.Integer",
+      "sourceType": "com.github.xuchen93.springboot.framework.base.properties.BaseProperty$MethodStatsConfig",
+      "defaultValue": 3600
+    },
+    {
+      "name": "xuchen93.framework.base.method-stats-config.enable-consume",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.github.xuchen93.springboot.framework.base.properties.BaseProperty$MethodStatsConfig",
+      "defaultValue": true
+    }
+  ],
+  "hints": []
+}
